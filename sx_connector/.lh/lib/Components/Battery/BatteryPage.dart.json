@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/Components/Battery/BatteryPage.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1719921839043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1719921846945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,46 @@\n+/*\r\n+ * @Descripttion: \r\n+ * @version: \r\n+ * @Author: sc\r\n+ * @Date: 2024-07-02 15:27:45\r\n+ */\r\n+import 'package:flutter/foundation.dart';\r\n+import 'package:flutter/material.dart';\r\n+import 'package:flutter/widgets.dart';\r\n+import 'package:logger/logger.dart';\r\n+import 'package:sx_connector/Components/Battery/BatteryWindows.dart';\r\n+import 'package:sx_connector/Themes/MyTextTheme.dart';\r\n+\r\n+class BatteryPage extends StatelessWidget {\r\n+  BatteryPage({super.key});\r\n+  final logger = Logger();\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    if (defaultTargetPlatform == TargetPlatform.android) {\r\n+      logger.d(\"电池===>发现Android平台\");\r\n+      // Future<AndroidBatteryInfo?> androidBatteryInfo = BatteryInfoPlugin().androidBatteryInfo;\r\n+      return AndroidBatteryWindow();\r\n+    }\r\n+    if (defaultTargetPlatform == TargetPlatform.iOS) {\r\n+      return IOSBatteryWindow();\r\n+    }\r\n+    return Center(\r\n+      child: Column(\r\n+        children: [\r\n+          Text(\"设备平台未知\", style: warmTextStyle()),\r\n+          ElevatedButton(\r\n+              onPressed: () {\r\n+                print(\"defaultTargetPlatform===>$defaultTargetPlatform\");\r\n+                var flagIOS = defaultTargetPlatform == TargetPlatform.iOS;\r\n+                var flagAndroid =\r\n+                    defaultTargetPlatform == TargetPlatform.android;\r\n+                print(\"比较IOS===>$flagIOS\");\r\n+                print(\"比较Android===>$flagAndroid\");\r\n+              },\r\n+              child: const Text(\"显示平台\"))\r\n+        ],\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                }
+            ],
+            "date": 1719921839043,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/foundation.dart';\r\nimport 'package:flutter/material.dart';\r\nimport 'package:flutter/widgets.dart';\r\nimport 'package:logger/logger.dart';\r\nimport 'package:sx_connector/Components/Battery/BatteryWindows.dart';\r\nimport 'package:sx_connector/Themes/MyTextTheme.dart';\r\n\r\nclass BatteryPage extends StatelessWidget {\r\n  BatteryPage({super.key});\r\n  final logger = Logger();\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    if (defaultTargetPlatform == TargetPlatform.android) {\r\n      logger.d(\"电池===>发现Android平台\");\r\n      // Future<AndroidBatteryInfo?> androidBatteryInfo = BatteryInfoPlugin().androidBatteryInfo;\r\n      return AndroidBatteryWindow();\r\n    }\r\n    if (defaultTargetPlatform == TargetPlatform.iOS) {\r\n      return IOSBatteryWindow();\r\n    }\r\n    return Center(\r\n      child: Column(\r\n        children: [\r\n          Text(\"设备平台未知\", style: warmTextStyle()),\r\n          ElevatedButton(\r\n              onPressed: () {\r\n                print(\"defaultTargetPlatform===>$defaultTargetPlatform\");\r\n                var flagIOS = defaultTargetPlatform == TargetPlatform.iOS;\r\n                var flagAndroid =\r\n                    defaultTargetPlatform == TargetPlatform.android;\r\n                print(\"比较IOS===>$flagIOS\");\r\n                print(\"比较Android===>$flagAndroid\");\r\n              },\r\n              child: const Text(\"显示平台\"))\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

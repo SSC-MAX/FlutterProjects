@@ -1,0 +1,26 @@
+{
+    "sourceFile": "lib/Components/TestPage1.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1719923840404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1719923847867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/foundation.dart';\r\n import 'package:flutter/widgets.dart';\r\n \r\n-class Testpage1 extends StatelessWidget {\r\n+class TestPage1 extends StatelessWidget {\r\n   const Testpage1({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n"
+                },
+                {
+                    "date": 1719923857879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/gestures.dart';\r\n+\r\n+ImmediateMultiDragGestureRecognizer\r\n+\r\n+class TestPage1 extends StatelessWidget {\r\n+  const TestPage1({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Placeholder();\r\n+  }\r\n+}\r\n"
+                }
+            ],
+            "date": 1719923840404,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/foundation.dart';\r\nimport 'package:flutter/widgets.dart';\r\n\r\nclass T extends StatelessWidget {\r\n  const T({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return const Placeholder();\r\n  }\r\n}"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "sourceFile": "lib/Components/TestPage2.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1719924024252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1719924033689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Placeholder();\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924063696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n   const TestPage2({super.key});\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n-    return const Placeholder();\r\n+    return const Center(\r\n+      child: const Text(\"\"),\r\n+    );\r\n\\ No newline at end of file\n   }\r\n-}\n-import 'package:flutter/material.dart';\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924070747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Center(\r\n+      child: const Text(\"页面2\", te),\r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924080875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Center(\r\n+      child: const Text(\"页面2\", style: TextStyle(color: Colors),),\r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924087764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Center(\r\n+      child: const Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: ),),\r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924102146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,44 +5,8 @@\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Center(\r\n-      child: const Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: ),),\r\n+      child: const Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0.),),\r\n     );\r\n   }\r\n-}\n-import 'package:flutter/material.dart';\r\n-\r\n-class TestPage2 extends StatelessWidget {\r\n-  const TestPage2({super.key});\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return const Center(\r\n-      child: const Text(\"页面2\", style: TextStyle(color: Colors),),\r\n-    );\r\n-  }\r\n-}\n-import 'package:flutter/material.dart';\r\n-\r\n-class TestPage2 extends StatelessWidget {\r\n-  const TestPage2({super.key});\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return const Center(\r\n-      child: const Text(\"页面2\", te),\r\n-    );\r\n-  }\r\n-}\n-import 'package:flutter/material.dart';\r\n-\r\n-class TestPage2 extends StatelessWidget {\r\n-  const TestPage2({super.key});\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return const Center(\r\n-      child: const Text(\"\"),\r\n-    );\r\n-  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719924113010,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Center(\r\n+      child: Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0),),\r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1719924024252,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\n"
+        }
+    ]
+}

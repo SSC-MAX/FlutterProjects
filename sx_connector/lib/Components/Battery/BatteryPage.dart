@@ -1,5 +1,9 @@
-import 'package:battery_info/battery_info_plugin.dart';
-import 'package:battery_info/model/android_battery_info.dart';
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sc
+ * @Date: 2024-07-02 15:27:45
+ */
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "android/gradle/wrapper/gradle-wrapper.properties",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1719926600886,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1719926762737,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n distributionBase=GRADLE_USER_HOME\r\n distributionPath=wrapper/dists\r\n zipStoreBase=GRADLE_USER_HOME\r\n zipStorePath=wrapper/dists\r\n-distributionUrl=https\\://services.gradle.org/distributions/gradle-7.6.3-all.zip\r\n-# distributionUrl=file:///E:/SC/Environment/gradle/gradle-7.6.3-all.zip\r\n+# distributionUrl=https\\://services.gradle.org/distributions/gradle-7.6.3-all.zip\r\n+distributionUrl=file:///E:/SC/Environment/gradle/gradle-7.6.3-all.zip\r\n"
+                }
+            ],
+            "date": 1719926600886,
+            "name": "Commit-0",
+            "content": "distributionBase=GRADLE_USER_HOME\r\ndistributionPath=wrapper/dists\r\nzipStoreBase=GRADLE_USER_HOME\r\nzipStorePath=wrapper/dists\r\ndistributionUrl=https\\://services.gradle.org/distributions/gradle-7.6.3-all.zip\r\n# distributionUrl=file:///E:/SC/Environment/gradle/gradle-7.6.3-all.zip\r\n"
+        }
+    ]
+}

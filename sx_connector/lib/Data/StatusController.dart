@@ -3,13 +3,11 @@ import 'dart:async';
 import 'package:battery_info/battery_info_plugin.dart';
 import 'package:battery_info/model/android_battery_info.dart';
 import 'package:battery_info/model/iso_battery_info.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:sx_connector/Components/Location/LocationHelper.dart';
 import 'package:sx_connector/Network/common/NetworkHelp.dart';
-import 'package:sx_connector/main.dart';
 import 'package:sx_connector/utils/CommonUtils.dart';
 import '../Network/pojo/StatusR.dart';
 
@@ -22,7 +20,6 @@ class StatusController extends GetxController{
 
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
     // 初始化状态
     if(defaultTargetPlatform==TargetPlatform.android){
