@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class TestPage2 extends StatelessWidget {
   const TestPage2({super.key});
@@ -6,7 +7,10 @@ class TestPage2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Center(
-      child: Text("页面2", style: TextStyle(color: Colors.green, fontSize: 20.0),),
+      child: Text(
+        "页面2",
+        style: TextStyle(color: Colors.green, fontSize: 20.0),
+      ),
     );
   }
 }

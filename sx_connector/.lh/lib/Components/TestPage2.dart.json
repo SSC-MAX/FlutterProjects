@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1719924024252,
@@ -36,6 +36,26 @@
                 {
                     "date": 1719924113010,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,12 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+class TestPage2 extends StatelessWidget {\r\n+  const TestPage2({super.key});\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const Center(\r\n+      child: Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0),),\r\n+    );\r\n+  }\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719988348368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,24 +1,13 @@\n import 'package:flutter/material.dart';\r\n \r\n class TestPage2 extends StatelessWidget {\r\n   const TestPage2({super.key});\r\n+  const \r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Center(\r\n       child: Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0),),\r\n     );\r\n   }\r\n-}\n-import 'package:flutter/material.dart';\r\n-\r\n-class TestPage2 extends StatelessWidget {\r\n-  const TestPage2({super.key});\r\n-\r\n-  @override\r\n-  Widget build(BuildContext context) {\r\n-    return const Center(\r\n-      child: const Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0.),),\r\n-    );\r\n-  }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1719988359961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n import 'package:flutter/material.dart';\r\n \r\n class TestPage2 extends StatelessWidget {\r\n   const TestPage2({super.key});\r\n-  const \r\n+  const statusController = Get\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Center(\r\n"
+                },
+                {
+                    "date": 1719988366282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,17 @@\n import 'package:flutter/material.dart';\r\n+import 'package:get/get.dart';\r\n \r\n class TestPage2 extends StatelessWidget {\r\n   const TestPage2({super.key});\r\n-  const statusController = Get\r\n+  const statusController = Get.find();\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Center(\r\n-      child: Text(\"页面2\", style: TextStyle(color: Colors.green, fontSize: 20.0),),\r\n+      child: Text(\r\n\\ No newline at end of file\n+        \"页面2\",\r\n+        style: TextStyle(color: Colors.green, fontSize: 20.0),\r\n+      ),\r\n     );\r\n   }\r\n-}\n+}\r\n"
+                },
+                {
+                    "date": 1719988425958,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:get/get.dart';\r\n \r\n class TestPage2 extends StatelessWidget {\r\n   const TestPage2({super.key});\r\n-  final statusController = Get.find();\r\n+  \r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const Center(\r\n"
+                },
+                {
+                    "date": 1719988433372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import 'package:get/get.dart';\r\n \r\n class TestPage2 extends StatelessWidget {\r\n   const TestPage2({super.key}){\r\n-\r\n+    \r\n   }\r\n   \r\n \r\n   @override\r\n"
                 }
             ],
             "date": 1719924024252,

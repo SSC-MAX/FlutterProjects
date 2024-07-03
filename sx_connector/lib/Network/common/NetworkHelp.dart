@@ -48,7 +48,7 @@ void socketUpdate(TargetPlatform platform, String msg) {
   StatusController statusController = Get.find();
   try{
     var channel = socketController.getWSChannel();
-    channel.sink.add(jsonEncode(statusController.buildStatusR(msg).toJson()));
+    channel?.sink.add(jsonEncode(statusController.buildStatusR(msg).toJson()));
     logger.i("socket发送成功");
   }catch(e){
     logger.e(e);

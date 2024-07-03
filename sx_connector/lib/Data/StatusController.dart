@@ -112,6 +112,14 @@ class StatusController extends GetxController{
         msg:"$author状态已更新 : $msg");
   }
 
+  void updateUITest(){
+    batteryLevel?.value = 100;
+    batteryStatus?.value = "Charging";
+    longitude?.value = 117.3;
+    latitude?.value = 66.8;
+    author?.value = GetPlatform.isAndroid ? "android" : "ios";
+  }
+
   @override
   String toString() {
     return 'batteryLevel : ${batteryLevel?.value}\nbatteryStatus : ${batteryStatus?.value}\nlongitude : ${longitude?.value}\nlatitude : ${latitude?.value}\nauthor : ${author?.value}';

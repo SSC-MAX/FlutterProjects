@@ -21,6 +21,8 @@ import 'package:sx_connector/utils/CommonUtils.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 void main() {
+  Get.put(StatusController());
+  Get.put(SocketController());
   runApp(MainApp());
 }
 
@@ -28,17 +30,14 @@ final channel = WebSocketChannel.connect(buildSocketUrl(defaultTargetPlatform));
 
 class MainApp extends StatelessWidget {
   MainApp({super.key}) {
-    Get.put(StatusController());
-    Get.put(SocketController());
-
     logger.i("检查平台===>${defaultTargetPlatform.name}");
   }
 
   ComponentsController componentsController =  Get.put(ComponentsController());
   final componentsList =
-      [const TestPage1(), const TestPage2(), const TestPage3()].obs;
+      [const TestPage2(), TestPage1(), const TestPage3()].obs;
   List<BottomNavigationBarItem> bottomNavigationBarItem = [
-    const BottomNavigationBarItem(icon: Icon(Icons.cabin), label: "Page1"),
+    const BottomNavigationBarItem(icon: Icon(Icons.access_alarms), label: "Page1"),
     const BottomNavigationBarItem(icon: Icon(Icons.abc), label: "Page2"),
     const BottomNavigationBarItem(icon: Icon(Icons.account_box_sharp), label: "Page3"),
   ];

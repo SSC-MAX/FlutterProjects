@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+// import 'package:sx_connector/Components/Battery/BatteryWindows.dart';
 import 'package:sx_connector/Components/Location/LocationHelper.dart';
 import 'package:sx_connector/Data/SocketController.dart';
 import 'package:sx_connector/Data/StatusController.dart';
@@ -14,17 +15,22 @@ import 'package:sx_connector/utils/WidgetBuilders.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
 class TestPage1 extends StatelessWidget {
-  const TestPage1({super.key});
 
+   TestPage1({super.key});
   
+  StatusController statusController = Get.find();
 
   @override
   Widget build(BuildContext context) {
+    // var statusController;
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Text("Hello World"),
+          Obx(()=>Text("电量 : ${statusController.batteryLevel!.value}")),
+          Obx(()=>Text("longitude : ${statusController.longitude!.value}")),
+          Obx(()=>Text("latitude : ${statusController.latitude!.value}")),
           const SizedBox(
             height: 25,
           ),
@@ -61,13 +67,13 @@ class TestPage1 extends StatelessWidget {
           ElevatedButton(
               onPressed: () {
                 SocketController socketController = Get.find();
-                WebSocketChannel channel =
+                WebSocketChannel? channel =
                 socketController.getWSChannel();
                 R request = R(
                     code: 101,
                     data: "连接测试",
                     msg: "来自:$defaultTargetPlatform");
-                channel.sink.add(jsonEncode(request.toJson()));
+                channel?.sink.add(jsonEncode(request.toJson()));
                 logger.d("发送Socket消息");
                 // channel.sink.add("Flutter发来消息");
                 // socketUpdate(defaultTargetPlatform, "Socket");
