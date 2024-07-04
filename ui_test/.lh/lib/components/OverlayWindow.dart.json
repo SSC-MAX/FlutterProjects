@@ -1,0 +1,50 @@
+{
+    "sourceFile": "lib/components/OverlayWindow.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1720075522456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720075528961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+/*\r\n+ * @Descripttion: \r\n+ * @version: \r\n+ * @Author: wxy\r\n+ * @Date: 2024-07-04 14:13:00\r\n+ */\r\n+import 'package:flutter/material.dart';\r\n+\r\n+OverlayEntry buildOverlayWindow() => OverlayEntry(\r\n+      builder: (BuildContext context) => Positioned(\r\n+        top: 50.0,\r\n+        left: 20.0,\r\n+        child: Container(\r\n+          width: 300.0,\r\n+          height: 200.0,\r\n+          decoration: BoxDecoration(\r\n+              borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n+              color: ),\r\n+        ),\r\n+      ),\r\n+    );\r\n"
+                },
+                {
+                    "date": 1720075535304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,8 @@\n           width: 300.0,\r\n           height: 200.0,\r\n           decoration: BoxDecoration(\r\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n-              color: ),\r\n+              color: Colors.blue),\r\n         ),\r\n       ),\r\n     );\r\n"
+                },
+                {
+                    "date": 1720075595377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,19 +17,6 @@\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n               color: Colors.blue),\r\n         ),\r\n       ),\r\n+      opaque: true\r\n     );\r\n-import 'package:flutter/material.dart';\r\n-\r\n-OverlayEntry buildOverlayWindow() => OverlayEntry(\r\n-      builder: (BuildContext context) => Positioned(\r\n-        top: 50.0,\r\n-        left: 20.0,\r\n-        child: Container(\r\n-          width: 300.0,\r\n-          height: 200.0,\r\n-          decoration: BoxDecoration(\r\n-              borderRadius: BorderRadius.all(Radius.circular(20.0))),\r\n-        ),\r\n-      ),\r\n-    );\r\n"
+                },
+                {
+                    "date": 1720075617262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n         left: 20.0,\r\n         child: Container(\r\n           width: 300.0,\r\n           height: 200.0,\r\n-          decoration: BoxDecoration(\r\n+          decoration: const BoxDecoration(\r\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n               color: Colors.blue),\r\n         ),\r\n       ),\r\n"
+                },
+                {
+                    "date": 1720075627689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n /*\r\n  * @Descripttion: \r\n  * @version: \r\n- * @Author: wxy\r\n+ * @Author: sc\r\n  * @Date: 2024-07-04 14:13:00\r\n  */\r\n import 'package:flutter/material.dart';\r\n \r\n"
+                },
+                {
+                    "date": 1720075710625,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           width: 300.0,\r\n           height: 200.0,\r\n           decoration: const BoxDecoration(\r\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n-              color: Colors.blue),\r\n+              color: Colors.bla),\r\n         ),\r\n       ),\r\n       opaque: true\r\n     );\r\n"
+                },
+                {
+                    "date": 1720075741332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n           width: 300.0,\r\n           height: 200.0,\r\n           decoration: const BoxDecoration(\r\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n-              color: Colors.bla),\r\n+              color: Colors.re),\r\n         ),\r\n       ),\r\n       opaque: true\r\n     );\r\n"
+                },
+                {
+                    "date": 1720075761614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,5 @@\n               borderRadius: BorderRadius.all(Radius.circular(20.0)),\r\n               color: Colors.red),\r\n         ),\r\n       ),\r\n-      opaque: true\r\n     );\r\n"
+                }
+            ],
+            "date": 1720075522456,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nOverlayEntry buildOverlayWindow() => OverlayEntry(\r\n      builder: (BuildContext context) => Positioned(\r\n        top: 50.0,\r\n        left: 20.0,\r\n        child: Container(\r\n          width: 300.0,\r\n          height: 200.0,\r\n          decoration: BoxDecoration(\r\n              borderRadius: BorderRadius.all(Radius.circular(20.0))),\r\n        ),\r\n      ),\r\n    );\r\n"
+        }
+    ]
+}
