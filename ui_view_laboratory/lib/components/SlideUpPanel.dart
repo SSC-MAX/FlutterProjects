@@ -10,24 +10,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:sliding_up_panel/sliding_up_panel.dart';
+import 'package:ui_view_laboratory/components/BatteryShower.dart';
 
 @override
 Widget buildSlideUpPanel(BuildContext context) {
-  return Scaffold(
-    // appBar: AppBar(
-    //   title: const Text("SlidingUpPanelExample"),
-    // ),
-    body: SlidingUpPanel(
-      minHeight: 60.0,
-      maxHeight: 200.0,
-      renderPanelSheet: false,
-      slideDirection: SlideDirection.DOWN,
-      defaultPanelState: PanelState.OPEN,
-      panel: _floatingPanel(), // 面板内容
-      collapsed: _floatingCollapsed(),
-      body: const Center(
-        child: Text("页面内容"),
-      ),
+  return SlidingUpPanel(
+    minHeight: 60.0,
+    maxHeight: 200.0,
+    renderPanelSheet: false,
+    slideDirection: SlideDirection.DOWN,
+    defaultPanelState: PanelState.OPEN,
+    panel: _floatingPanel(), // 面板内容
+    collapsed: _floatingCollapsed(),
+    body: const Center(
+      child: Text("页面内容"),
     ),
   );
 }
@@ -77,67 +73,18 @@ Widget _floatingPanel() {
       children: [
         Expanded(
           child: Center(
-            child: Row(
-              children: [
-                CustomPaint(
-                  painter: BatteryPainter(80),
-                ),
-                // const Text("面板内容"),
-              ],
-            )),),
+              child: Row(
+            children: [
+              buildBatteryShower(100),
+              const Text("面板内容"),
+            ],
+          )),
+        ),
         const Align(
           alignment: AlignmentDirectional.bottomCenter,
-            child: Icon(Icons.keyboard_arrow_up, color: Colors.black87),
-          ),
+          child: Icon(Icons.keyboard_arrow_up, color: Colors.black87),
+        ),
       ],
     ),
   );
-}
-
-class BatteryPainter extends CustomPainter {
-  final double batteryLevel;
-
-  BatteryPainter(this.batteryLevel);
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    // 绘制背景圆
-    Paint backgroundPaint = Paint()
-      ..color = Colors.green
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 12.0;
-
-    double centerX = size.width / 2;
-    double centerY = size.height / 2;
-    double radius = size.width / 2 - backgroundPaint.strokeWidth / 2;
-
-    canvas.drawCircle(Offset(centerX, centerY), radius, backgroundPaint);
-
-    // 计算电量对应的角度
-    double sweepAngle = batteryLevel / 100 * 360;
-
-    // 绘制电量圆弧
-    Paint arcPaint = Paint()
-      ..color = Colors.blue
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 12.0
-      ..strokeCap = StrokeCap.round;
-
-    canvas.drawArc(
-      Rect.fromCircle(center: Offset(centerX, centerY), radius: radius),
-      _degreesToRadians(-90), // 从正上方开始绘制
-      _degreesToRadians(sweepAngle), // 绘制的角度
-      false,
-      arcPaint,
-    );
-  }
-
-  double _degreesToRadians(double degrees) {
-    return degrees * math.pi / 180.0;
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) {
-    return true;
-  }
 }

@@ -1,46 +1,25 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sc
+ * @Date: 2024-07-04 14:56:43
+ */
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
+import 'package:ui_view_laboratory/components/SlideUpPanel.dart';
 
-void main() {
-  runApp(MaterialApp(home: Scaffold(body: SamplePage())));
+void main(List<String> args) {
+  runApp(const MainApp());
 }
 
-class SamplePage extends StatefulWidget {
-  @override
-  _SamplePageState createState() => _SamplePageState();
-}
-
-class _SamplePageState extends State<SamplePage> {
-  void _openPage(Widget page) {
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (BuildContext context) => page,
-      ),
-    );
-  }
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            CircularPercentIndicator(
-                  radius: 60.0,
-                  lineWidth: 5.0,
-                  percent: 0.5,
-                  center: Text("100%"),
-                  progressColor: Colors.green,
-                ),
-            Padding(
-              padding: EdgeInsets.all(20.0),
-            ),
-            
-          ],
-        ),
+    return MaterialApp(
+      home: Scaffold(
+        body: buildSlideUpPanel(context),
+
       ),
     );
   }

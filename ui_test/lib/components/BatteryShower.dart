@@ -18,10 +18,13 @@ Widget buildBatteryShower(double batteryLevel) {
     color = Colors.red;
   }
   return CircularPercentIndicator(
-    radius: 40.0,
-    lineWidth: 8.0,
+    radius: 50.0,
+    lineWidth: 7.0,
     percent: level,
-    center: Text("$batteryLevel%", style: TextStyle(fontSize: 20, color: color),),
+    animation: true,
+    center: Text(
+      "${batteryLevel.toInt()}%",
+      style: TextStyle(fontSize: 23, color: color, fontWeight: FontWeight.bold),),
     progressColor: color,
   );
 }

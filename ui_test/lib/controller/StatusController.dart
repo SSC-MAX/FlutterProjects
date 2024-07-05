@@ -10,7 +10,7 @@ import 'package:get/get.dart';
 import 'package:geolocator/geolocator.dart';
 
 class StatusController extends GetxController{
-  RxInt? batteryLevel = 0.obs;
+  RxDouble? batteryLevel = 0.0.obs;
   RxString? batteryStatus = ''.obs;
   RxDouble? longitude = 1.0.obs;
   RxDouble? latitude = 1.0.obs;
@@ -19,7 +19,7 @@ class StatusController extends GetxController{
   @override
   Future<void> onInit() async {
     super.onInit();
-    batteryLevel?.value =  100;
+    batteryLevel?.value =  10;
     batteryStatus?.value = "正在充电";
     longitude?.value = 113.3;
     latitude?.value = 71.23;
@@ -27,9 +27,9 @@ class StatusController extends GetxController{
     logger.i("Android Status初始化完成\n${toString()}");
   }
 
-  void setBatteryLevel(){
-    batteryLevel?.value = Random().nextInt(100);
-  }
+  // void setBatteryLevel(){
+  //   batteryLevel?.value = Random().nextDouble(100.0);
+  // }
 
   // 更新地理位置
   void updateLocationData(){
