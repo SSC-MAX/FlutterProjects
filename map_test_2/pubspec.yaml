@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  amap_flutter_map: ^3.0.0
+  amap_flutter_location: ^3.0.0
+  permission_handler: ^8.1.0
 
 dev_dependencies:
   flutter_test:

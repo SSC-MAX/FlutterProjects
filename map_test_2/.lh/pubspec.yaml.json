@@ -1,0 +1,42 @@
+{
+    "sourceFile": "pubspec.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1725180495583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1725185883608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-   amap_flutter_map: ^3.0.0\r\n+  amap_flutter_map: ^3.0.0\r\n+  amap\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725185888686,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+name: map_test_2\r\n+description: \"A new Flutter project.\"\r\n+publish_to: 'none'\r\n+version: 0.1.0\r\n+\r\n+environment:\r\n+  sdk: '>=3.4.3 <4.0.0'\r\n+\r\n+dependencies:\r\n+  flutter:\r\n+    sdk: flutter\r\n+  amap_flutter_map: ^3.0.0\r\n+  amap_flutter_location: ^3.0.0\r\n+\r\n+dev_dependencies:\r\n+  flutter_test:\r\n+    sdk: flutter\r\n+  flutter_lints: ^3.0.0\r\n+\r\n+flutter:\r\n+  uses-material-design: true\r\n"
+                },
+                {
+                    "date": 1725185901160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+name: map_test_2\r\n+description: \"A new Flutter project.\"\r\n+publish_to: 'none'\r\n+version: 0.1.0\r\n+\r\n+environment:\r\n+  sdk: '>=3.4.3 <4.0.0'\r\n+\r\n+dependencies:\r\n+  flutter:\r\n+    sdk: flutter\r\n+  amap_flutter_map: ^3.0.0\r\n+  amap_flutter_location: ^3.0.0\r\n+  per\r\n+\r\n+dev_dependencies:\r\n+  flutter_test:\r\n+    sdk: flutter\r\n+  flutter_lints: ^3.0.0\r\n+\r\n+flutter:\r\n+  uses-material-design: true\r\n"
+                },
+                {
+                    "date": 1725186160934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,55 +10,13 @@\n   flutter:\r\n     sdk: flutter\r\n   amap_flutter_map: ^3.0.0\r\n   amap_flutter_location: ^3.0.0\r\n-  per\r\n+  permission_handler: ^8.1.0\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n   flutter_lints: ^3.0.0\r\n \r\n flutter:\r\n   uses-material-design: true\r\n-name: map_test_2\r\n-description: \"A new Flutter project.\"\r\n-publish_to: 'none'\r\n-version: 0.1.0\r\n-\r\n-environment:\r\n-  sdk: '>=3.4.3 <4.0.0'\r\n-\r\n-dependencies:\r\n-  flutter:\r\n-    sdk: flutter\r\n-  amap_flutter_map: ^3.0.0\r\n-  amap_flutter_location: ^3.0.0\r\n-\r\n-dev_dependencies:\r\n-  flutter_test:\r\n-    sdk: flutter\r\n-  flutter_lints: ^3.0.0\r\n-\r\n-flutter:\r\n-  uses-material-design: true\r\n-name: map_test_2\r\n-description: \"A new Flutter project.\"\r\n-publish_to: 'none'\r\n-version: 0.1.0\r\n-\r\n-environment:\r\n-  sdk: '>=3.4.3 <4.0.0'\r\n-\r\n-dependencies:\r\n-  flutter:\r\n-    sdk: flutter\r\n-  amap_flutter_map: ^3.0.0\r\n-  amap\r\n-\r\n-dev_dependencies:\r\n-  flutter_test:\r\n-    sdk: flutter\r\n-  flutter_lints: ^3.0.0\r\n-\r\n-flutter:\r\n-  uses-material-design: true\r\n"
+                },
+                {
+                    "date": 1725186171351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   flutter:\r\n     sdk: flutter\r\n   amap_flutter_map: ^3.0.0\r\n   amap_flutter_location: ^3.0.0\r\n+  amap_test\r\n   permission_handler: ^8.1.0\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n"
+                },
+                {
+                    "date": 1725186219578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+name: map_test_2\r\n+description: \"A new Flutter project.\"\r\n+publish_to: 'none'\r\n+version: 0.1.0\r\n+\r\n+environment:\r\n+  sdk: '>=3.4.3 <4.0.0'\r\n+\r\n+dependencies:\r\n+  flutter:\r\n+    sdk: flutter\r\n+  amap_flutter_map: ^3.0.0\r\n+  amap_flutter_location: ^3.0.0\r\n+  permission_handler: ^8.1.0\r\n+\r\n+dev_dependencies:\r\n+  flutter_test:\r\n+    sdk: flutter\r\n+  flutter_lints: ^3.0.0\r\n+\r\n+flutter:\r\n+  uses-material-design: true\r\n"
+                }
+            ],
+            "date": 1725180495583,
+            "name": "Commit-0",
+            "content": "name: map_test_2\r\ndescription: \"A new Flutter project.\"\r\npublish_to: 'none'\r\nversion: 0.1.0\r\n\r\nenvironment:\r\n  sdk: '>=3.4.3 <4.0.0'\r\n\r\ndependencies:\r\n  flutter:\r\n    sdk: flutter\r\n   amap_flutter_map: ^3.0.0\r\n\r\ndev_dependencies:\r\n  flutter_test:\r\n    sdk: flutter\r\n  flutter_lints: ^3.0.0\r\n\r\nflutter:\r\n  uses-material-design: true\r\n"
+        }
+    ]
+}
