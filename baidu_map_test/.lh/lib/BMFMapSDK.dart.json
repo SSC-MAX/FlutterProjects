@@ -1,0 +1,22 @@
+{
+    "sourceFile": "lib/BMFMapSDK.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1720515815483,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720515865728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,52 +0,0 @@\n-import 'package:flutter/services.dart';\r\n-import 'package:flutter_baidu_mapapi_base/src/map/bmf_types.dart';\r\n-\r\n-/// 鉴权方法名\r\n-const kSetAPIKey = 'flutter_bmfbase/sdk/setApiKey';\r\n-\r\n-/// 隐私政策\r\n-const kSetPrivacyAPIKey = 'flutter_bmfbase/sdk/setAgreePrivacy';\r\n-\r\n-/// 地图sdk初始化鉴权\r\n-class BMFMapSDK {\r\n-  /// 初始化百度地图sdk\r\n-  ///\r\n-  /// apiKey 百度地图开放平台申请的ak\r\n-  /// coordType 坐标类型 目前不支持将全局坐标类型设置为WGS84\r\n-  static void setApiKeyAndCoordType(\r\n-      String apiKey, BMF_COORD_TYPE coordType) async {\r\n-    try {\r\n-      await MethodChannel('flutter_bmfbase').invokeMethod(\r\n-          kSetAPIKey, {'apiKey': apiKey, 'BMF_COORD_TYPE': coordType.index});\r\n-    } on PlatformException catch (e) {\r\n-      print(e.toString());\r\n-    }\r\n-  }\r\n-\r\n-  /// 设置地图坐标类型\r\n-  ///\r\n-  /// coordType 坐标类型，目前不支持将全局坐标类型设置为WGS84\r\n-  static void setCoordType(BMF_COORD_TYPE coordType) async {\r\n-    try {\r\n-      await MethodChannel('flutter_bmfbase')\r\n-          .invokeMethod(kSetAPIKey, {'BMF_COORD_TYPE': coordType.index});\r\n-    } on PlatformException catch (e) {\r\n-      print(e.toString());\r\n-    }\r\n-  }\r\n-\r\n-  /// 设置用户是否同意SDK隐私协议，默认false，since 3.1.0\r\n-  ///\r\n-  /// 设置为false时，将影响地图SDK所有检索组件功能的使用\r\n-  ///\r\n-  /// 隐私政策官网链接：https://lbsyun.baidu.com/index.php?title=openprivacy\r\n-  /// isAgree 用户是否同意SDK隐私协议\r\n-  static void setAgreePrivacy(bool isAgree) async {\r\n-    try {\r\n-      await MethodChannel('flutter_bmfbase')\r\n-          .invokeMethod(kSetPrivacyAPIKey, {'isAgree': isAgree});\r\n-    } catch (e) {\r\n-      print(e.toString());\r\n-    }\r\n-  }\r\n-}\r\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1720515815483,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/services.dart';\r\nimport 'package:flutter_baidu_mapapi_base/src/map/bmf_types.dart';\r\n\r\n/// 鉴权方法名\r\nconst kSetAPIKey = 'flutter_bmfbase/sdk/setApiKey';\r\n\r\n/// 隐私政策\r\nconst kSetPrivacyAPIKey = 'flutter_bmfbase/sdk/setAgreePrivacy';\r\n\r\n/// 地图sdk初始化鉴权\r\nclass BMFMapSDK {\r\n  /// 初始化百度地图sdk\r\n  ///\r\n  /// apiKey 百度地图开放平台申请的ak\r\n  /// coordType 坐标类型 目前不支持将全局坐标类型设置为WGS84\r\n  static void setApiKeyAndCoordType(\r\n      String apiKey, BMF_COORD_TYPE coordType) async {\r\n    try {\r\n      await MethodChannel('flutter_bmfbase').invokeMethod(\r\n          kSetAPIKey, {'apiKey': apiKey, 'BMF_COORD_TYPE': coordType.index});\r\n    } on PlatformException catch (e) {\r\n      print(e.toString());\r\n    }\r\n  }\r\n\r\n  /// 设置地图坐标类型\r\n  ///\r\n  /// coordType 坐标类型，目前不支持将全局坐标类型设置为WGS84\r\n  static void setCoordType(BMF_COORD_TYPE coordType) async {\r\n    try {\r\n      await MethodChannel('flutter_bmfbase')\r\n          .invokeMethod(kSetAPIKey, {'BMF_COORD_TYPE': coordType.index});\r\n    } on PlatformException catch (e) {\r\n      print(e.toString());\r\n    }\r\n  }\r\n\r\n  /// 设置用户是否同意SDK隐私协议，默认false，since 3.1.0\r\n  ///\r\n  /// 设置为false时，将影响地图SDK所有检索组件功能的使用\r\n  ///\r\n  /// 隐私政策官网链接：https://lbsyun.baidu.com/index.php?title=openprivacy\r\n  /// isAgree 用户是否同意SDK隐私协议\r\n  static void setAgreePrivacy(bool isAgree) async {\r\n    try {\r\n      await MethodChannel('flutter_bmfbase')\r\n          .invokeMethod(kSetPrivacyAPIKey, {'isAgree': isAgree});\r\n    } catch (e) {\r\n      print(e.toString());\r\n    }\r\n  }\r\n}\r\n"
+        }
+    ]
+}

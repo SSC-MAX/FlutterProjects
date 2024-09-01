@@ -1,0 +1,46 @@
+{
+    "sourceFile": "lib/main.dart",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1720515653727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1720515659882,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+void main() {\r\n+  runApp(const MainApp());\r\n+}\r\n+\r\n+class MainApp extends StatelessWidget {\r\n+  const MainApp({super.key});\r\n+\r\n+  BMFMap\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const MaterialApp(\r\n+      home: Scaffold(\r\n+        body: Center(\r\n+          child: Text('Hello World!'),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1720515667417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+void main() {\r\n+  runApp(const MainApp());\r\n+}\r\n+\r\n+class MainApp extends StatelessWidget {\r\n+  const MainApp({super.key});\r\n+\r\n+  BMF\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const MaterialApp(\r\n+      home: Scaffold(\r\n+        body: Center(\r\n+          child: Text('Hello World!'),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1720515673088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n \r\n class MainApp extends StatelessWidget {\r\n   const MainApp({super.key});\r\n \r\n-  BMFMap\r\n+  BMFMapSDK\r\n \r\n   @override\r\n   Widget build(BuildContext context) {\r\n     return const MaterialApp(\r\n"
+                },
+                {
+                    "date": 1720515680041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+void main() {\r\n+  runApp(const MainApp());\r\n+}\r\n+\r\n+class MainApp extends StatelessWidget {\r\n+  const MainApp({super.key});\r\n+\r\n+  BMFMapSDK.setAgreeP\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const MaterialApp(\r\n+      home: Scaffold(\r\n+        body: Center(\r\n+          child: Text('Hello World!'),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1720515686333,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import 'package:flutter/material.dart';\r\n+\r\n+void main() {\r\n+  runApp(const MainApp());\r\n+}\r\n+\r\n+class MainApp extends StatelessWidget {\r\n+  const MainApp({super.key});\r\n+\r\n+  BMFMapSDK.setAgreePrivacy(true)\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const MaterialApp(\r\n+      home: Scaffold(\r\n+        body: Center(\r\n+          child: Text('Hello World!'),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                },
+                {
+                    "date": 1720515694427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import 'package:flutter/material.dart';\r\n \r\n void main() {\r\n-  runApp(const MainApp());\r\n+  runApp(MainApp());\r\n }\r\n \r\n class MainApp extends StatelessWidget {\r\n   MainApp({super.key});\r\n"
+                },
+                {
+                    "date": 1720515704706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+import 'package:flutter/material.dart';\r\n+import 'package:flutter_baidu_mapapi_map/flutter_baidu_mapapi_map.dart';\r\n+import 'package:flutter_bmflocation/flutter_bmflocation.dart';\r\n+import 'package:flutter_bmfmap_example/CustomWidgets/map_appbar.dart';\r\n+import 'package:flutter_baidu_mapapi_base/flutter_baidu_mapapi_base.dart'\r\n+    show BMFMapSDK, BMF_COORD_TYPE;\r\n+import 'package:permission_handler/permission_handler.dart';\r\n+import 'flutter_map_demo.dart';\r\n+\r\n+void main() {\r\n+  runApp(MainApp());\r\n+}\r\n+\r\n+class MainApp extends StatelessWidget {\r\n+  MainApp({super.key});\r\n+\r\n+  BMFMapSDK.setAgreePrivacy(true);\r\n+\r\n+  @override\r\n+  Widget build(BuildContext context) {\r\n+    return const MaterialApp(\r\n+      home: Scaffold(\r\n+        body: Center(\r\n+          child: Text('Hello World!'),\r\n+        ),\r\n+      ),\r\n+    );\r\n+  }\r\n+}\r\n"
+                }
+            ],
+            "date": 1720515653727,
+            "name": "Commit-0",
+            "content": "import 'package:flutter/material.dart';\r\n\r\nvoid main() {\r\n  runApp(const MainApp());\r\n}\r\n\r\nclass MainApp extends StatelessWidget {\r\n  const MainApp({super.key});\r\n\r\n  \r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return const MaterialApp(\r\n      home: Scaffold(\r\n        body: Center(\r\n          child: Text('Hello World!'),\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}\r\n"
+        }
+    ]
+}

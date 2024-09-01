@@ -1,0 +1,50 @@
+{
+    "sourceFile": "pubspec.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1725096990132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1725096997241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-  \r\n+  flutter_baidu\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725097005320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-  flutter_baidu\r\n+  flutter_baidu_mapapi_map\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725097010576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-  flutter_baidu_mapapi_map\r\n+  flutter_baidu_mapapi_map:^3.7.1\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725097017253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,9 @@\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n   flutter_baidu_mapapi_map:^3.7.1\r\n+  flutter_baidu_mapapi_search: ^3.7.1\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725097024770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n   flutter:\r\n     sdk: flutter\r\n   flutter_baidu_mapapi_map:^3.7.1\r\n   flutter_baidu_mapapi_search: ^3.7.1\r\n+   flutter_baidu_mapapi_utils: ^3.7.1\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725097045176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,11 +8,11 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-  flutter_baidu_mapapi_map:^3.7.1\r\n+  flutter_baidu_mapapi_map: ^3.7.1\r\n   flutter_baidu_mapapi_search: ^3.7.1\r\n-   flutter_baidu_mapapi_utils: ^3.7.1\r\n+  flutter_baidu_mapapi_utils: ^3.7.1\r\n \r\n dev_dependencies:\r\n   flutter_test:\r\n     sdk: flutter\r\n"
+                },
+                {
+                    "date": 1725098089280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n+  flutter_bm\r\n   flutter_baidu_mapapi_map: ^3.7.1\r\n   flutter_baidu_mapapi_search: ^3.7.1\r\n   flutter_baidu_mapapi_utils: ^3.7.1\r\n \r\n"
+                },
+                {
+                    "date": 1725098103893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \r\n dependencies:\r\n   flutter:\r\n     sdk: flutter\r\n-  flutter_bm\r\n+  flutter_bmflocation: ^3.6.0\r\n   flutter_baidu_mapapi_map: ^3.7.1\r\n   flutter_baidu_mapapi_search: ^3.7.1\r\n   flutter_baidu_mapapi_utils: ^3.7.1\r\n \r\n"
+                }
+            ],
+            "date": 1725096990132,
+            "name": "Commit-0",
+            "content": "name: map_test1\r\ndescription: \"A new Flutter project.\"\r\npublish_to: 'none'\r\nversion: 0.1.0\r\n\r\nenvironment:\r\n  sdk: '>=3.4.3 <4.0.0'\r\n\r\ndependencies:\r\n  flutter:\r\n    sdk: flutter\r\n  \r\n\r\ndev_dependencies:\r\n  flutter_test:\r\n    sdk: flutter\r\n  flutter_lints: ^3.0.0\r\n\r\nflutter:\r\n  uses-material-design: true\r\n"
+        }
+    ]
+}
